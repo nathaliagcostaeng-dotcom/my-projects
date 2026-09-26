@@ -1,1 +1,4 @@
-
+fastai>=2.7.15
+gradio>=4.0.0
+torch>=2.0.0
+pandas>=2.0.0
