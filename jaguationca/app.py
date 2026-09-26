@@ -12,7 +12,7 @@ LOG_FILE_PATH = os.path.join(CURRENT_DIR, 'feedback_metrics.csv')
 
 # CONFIGURAÇÃO DO GOOGLE DRIVE: Substitua o ID abaixo pelo ID do seu arquivo copiado do Drive
 # Exemplo: se o link é .../d/1A2B3C4D/view, o ID é 1A2B3C4D
-GOOGLE_DRIVE_FILE_ID = "COLOQUE_AQUI_O_ID_DO_SEU_ARQUIVO_DO_DRIVE"
+GOOGLE_DRIVE_FILE_ID = "1V3V09dbYwE79qibFrjZFjdLE6E7F6_Gd"
 DOWNLOAD_URL = f"https://google.com{GOOGLE_DRIVE_FILE_ID}"
 
 def download_model_weights(url, destination):
