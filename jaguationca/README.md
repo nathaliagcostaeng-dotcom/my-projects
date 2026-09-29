@@ -67,6 +67,10 @@ Actual \ Predicted   jaguar   ocelot
 
 This ecosystem is fully self-contained, reproducible, and ready for edge-testing via Google Colab.
 
+### ⚠️ Infrastructure Requirement: GPU Acceleration
+
+To process the high-fidelity tensor arrays (`Resize(448)`) and optimize the extensive parameter layers of the **ResNet50** without compilation timeouts, **this notebook strictly requires a GPU runtime environment**. Before running the cells, navigate to the top menu in Google Colab and select **Runtime > Change runtime type > T4 GPU** (or any active hardware accelerator).
+
 ### Local Environment Preparation
 Ensure you have your raw imagery structured locally as follows before loading into runtime memory:
 ```text
@@ -78,7 +82,7 @@ Ensure you have your raw imagery structured locally as follows before loading in
 ```
 
 ### Running the System
-1. Open the provided notebook in Google Colab.
+1. Open the provided notebook in Google Colab and confirm that **GPU hardware acceleration is active**.
 2. Drag and drop your local `conservation_dataset` (unzip the file) folder directly into the Colab side file-browser panel.
 3. Run all cells sequentially. Section 1 will install `fastai` and `gradio` seamlessly.
 4. Section 2 executes the 5-epoch training loop using discriminative weights matching the ResNet50 constraints.
